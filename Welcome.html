@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PUBG</title>
+	<link rel="stylesheet" type="text/css" href="Welcome.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Hanalei Fill">
+</head>
+<body>
+	<div class="header">
+		<a href="Home.html"><img src="logo.jpg" style="float: left;"></a>
+		<div style="float: right;">
+			<div class="menu">
+				<ul>
+				<li><strong><a href="Welcome.html">Home</a></strong></li>
+				<li><strong><a href="Battlegrounds.html">Battlegrounds</a></strong></li>
+				<li><strong><a href="Discover.html">Discover</a></strong></li>
+				<li><strong><a href="Events.html">Events</a></strong></li>
+			</ul>
+			</div>
+			<div class="topright">
+				<a href="http://www.facebook.com"><img src="fb.png" style="height: 2vw;width: 2vw;"></a>
+				<a href="http://www.twitter.com"><img src="twitter.png" style="height: 2vw;width: 2vw;"></a>
+				<a href="http://www.google.com/gmail"><img src="gmail.jpg" style="height: 2vw;width: 2.5vw;"></a>
+			</div>
+		</div>				
+	</div>
+	<div class="welcom-screen">
+		<div class="slideshow-container">
+
+		<div class="mySlides fade">
+	  	<img src="pubg1.jpg" style="width:100%">	  	
+		</div>
+
+		<div class="mySlides fade">	 	 
+	 	 <img src="pubg2.jpg" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+	 	 	<img src="pubg3.jpg" style="width:100%">  
+		</div>
+		</div>		
+		<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+	<div class="textbody">
+		<p>PlayerUnknown's Battlegrounds (PUBG) is an online multiplayer battle royale game developed and published by PUBG Corporation, a subsidiary of South Korean video game company Bluehole. The game is based on previous mods that were created by Brendan "PlayerUnknown" Greene for other games, inspired by the 2000 Japanese film Battle Royale, and expanded into a standalone game under Greene's creative direction. In the game, up to one hundred players parachute onto an island and scavenge for weapons and equipment to kill others while avoiding getting killed themselves. The available safe area of the game's map decreases in size over time, directing surviving players into tighter areas to force encounters. The last player or team standing wins the round.</p>
+	</div>	
+	</div>
+	<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

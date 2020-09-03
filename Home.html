@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="Home.css">
+</head>
+<body>
+
+<div class="home">
+<button name="home_button" onclick="document.getElementById('logindiv').style.display='block' " style="width: auto;">Hi</button>
+</div>
+<div class="frontbodyl animate" id="logindiv">
+	<br>
+	<img src="Profile.jpg"><br><br>
+	<form action="Welcome.html">
+	<strong><label>Name</label></strong><br><input type="text" name="" required><br><br>
+	<strong><label>Password</label></strong><br><input type="password" name="" required><br><br>
+	<input type="submit" name="" value="Log In"><br><br>	
+	</form>
+	<span>Don't have an account ?<button name="SignUp" id="signupid">Signup</button></span><br>
+	<span><button onclick="window.location.href='Welcome.html'">Skip >></button></span>
+</div>
+<div class="frontbodys animate" id="signupdiv">
+	<br>
+	<img src="Profile.jpg"><br><br>
+	<form action="Home.html">
+	<strong><label>User Id</label></strong><br><input type="text" name="" required><br><br>
+	<strong><label>Email</label></strong><br><input type="email" name="" required><br><br>
+	<strong><label>First Name</label></strong><br><input type="text" name="" required><br><br>
+	<strong><label>Last Name</label></strong><br><input type="text" name="" required><br><br>
+	<strong><label>Password</label></strong><br><input type="password" name="" required><br><br>
+	<strong><label>Confirm Password</label></strong><br><input type="password" name="" required><br><br><br>
+	<input type="submit" name="" value="SignUp"><br><br>	
+	</form>
+</div>
+<script type="text/javascript">
+	var mod = document.getElementById('logindiv');
+	var sud = document.getElementById('signupdiv');
+	var sub = document.getElementById('signupid');
+	sub.onclick = function()
+	{
+		sud.style.display = "block";
+		mod.style.display = "none";
+	}
+	window.onclick = function(event)
+	{
+		if (event.target == mod) 
+		{
+			mod.style.display = "none" ;
+		}
+	}
+	window.onclick = function(event)
+	{
+		if (event.target == sud) 
+		{
+			sud.style.display = "none" ;
+		}
+	}
+</script>
+</body>
+</html>
